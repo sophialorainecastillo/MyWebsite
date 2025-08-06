@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+    #head{
+    display: flex;
+    background-color: pink;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+   }
+   .header img{
+    margin-top: 1px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50px;
+
+   }
+   .menu{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    align-items: center;
+    justify-content: start;
+   }
+    a
+   {
+    text-decoration: none;
+    color: inherit;
+    margin: 15px;
+   }
+   a:hover
+   {
+    color: rgb(184, 13, 153);
+   }
+   #start{
+    margin-top: 115px;
+   }
+   #start img
+   {
+    margin-top: 15px;
+    width: 100%;              
+    height: auto;            
+    border-radius: 10px;
+    border: 2px solid black;
+    max-height: 78vh;        
+    object-fit: cover;       
+    display: block;
+   }
+   #bio
+   {
+    display: block;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: rgb(253, 215, 220);
+   }
+   #aboutme {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    }
+    .image img {
+    height: 300px;
+    width: 230px;
+    border-radius: 10px;
+    border: 2px solid #333;
+    object-fit: cover;
+    }
+    .intro h3 {
+    max-width: 700px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(193, 139, 69);
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+    }
+    .intro p {
+    max-width: 700px;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    }
+    #educ h2 {
+    text-align: center;
+    color: rgb(193, 139, 69);
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    #educ h3 {
+    color: #333;
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 15px;
+    }
+    #educ p {
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #555;
+    padding-left: 15px;
+    }
+    .educ-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    }
+    .educ-card {
+    background-color: #fbe3e8;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 200px;
+    text-align: center;
+    border: 2px solid black;
+    }
+    #skills{
+    text-align: center;
+    }
+    #skills h2{
+    text-align: center;
+    color: rgb(193, 139, 69);
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    .skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    }
+    .skill-card {
+    background-color: #fbe3e8;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 200px;
+    text-align: center;
+    border: 2px solid black;
+    }
+    #contacts {
+    padding: 20px;
+    margin: 30px auto;
+    background-color: rgb(253, 215, 220);
+    border: 2px solid #333;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 700px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    #contacts h2 {
+    text-align: center;
+    color: rgb(193, 139, 69);
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    #contacts ul {
+    list-style: none;
+    padding: 0;
+    }
+    #contacts li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    #contacts a {
+    text-decoration: none;
+    }
+    #contacts a:hover {
+    color: rgb(184, 13, 153); 
+    text-decoration: underline;
+    }
+    #aboutme, #educ, #skills, #contacts {
+    padding: 40px 20px;
+    }
+    html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px; 
+    }
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophia</title>
+</head>
+<body>
+    <div id="head">
+        <div class="header">
+            <img src="soplogo.png">
+        </div>
+        <div class="menu">
+            <a href="#start">Home</a>
+            <a href="#aboutme">About Me</a>
+            <a href="#educ">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contacts">Contacts</a>
+        </div>
+    </div>
+    <div id="start">
+        <img src="intro.png" alt="Profile Picture">
+    </div>
+
+    <div id="bio">
+        <div id="aboutme">
+            <div class="image">
+            <img src="about.jpg">
+            </div>
+            <div class="intro">
+            <h3>
+                Hello! I’m Sophia Loraine S. Castillo,
+            </h3>
+            <p>
+                a 20 year old Information Technology student with a passion 
+                for learning and personal growth. As someone who came from a family that deeply values education, 
+                I’ve always dreamed of finishing college to support my family and create a better future for us. 
+                I’m currently focused on developing my skills in IT and building a solid foundation for a career 
+                in the tech industry.
+            </p>
+            </div>
+        </div>
+        <div id="educ">
+            <h2>Education</h2>
+            <div class="educ-container">
+            <div class="educ-card">
+                <h3>Calumpang Elementary School</h3>
+                 <p>2010–2017</p>
+            </div>
+            <div class="educ-card">
+                <h3>Calumpit National High School</h3>
+                <p>2017–2023</p>
+           </div>
+           <div class="educ-card">
+                <h3>Bulacan State University</h3>
+                <p>2023–Present</p>
+            </div>
+            </div>
+        </div>
+        <div id="skills">
+            <h2>Skills</h2>
+            <div class="skill-container">
+            <div class="skill-card">
+                <h4>🕒 Time Management</h4>
+                <p>Organizing tasks efficiently and meeting deadlines.</p>
+            </div>
+            <div class="skill-card">
+                <h4>🤝 Team Collaboration</h4>
+                <p>Working well with others to complete group projects.</p>
+            </div>
+            <div class="skill-card">
+                <h4>🗣️ Communication Skills</h4>
+                <p>Clearly expressing ideas in both writing and speech.</p>
+            </div>
+            <div class="skill-card">
+                <h4>📘 Eagerness to Learn</h4>
+                <p>Always curious and open to new knowledge and challenges.</p>
+            </div>
+            </div>
+        </div>
+        <div id="contacts">
+                <h2>Contact Me</h2>
+                <ul>
+                    <li><strong>Email:</strong> 
+                        <a href="mailto:sophialoraine.castillo.bsit@gmail.com">sophialoraine.castillo.bsit@gmail.com</a></li>
+                    <li><strong>Phone:</strong> 0951 590 9066</li>
+                    <li><strong>LinkedIn:</strong> 
+                        <a href="https://www.linkedin.com/in/sophia-loraine-castillo-2a2940378" target="_blank">Sophia Loraine Castillo</a></li>
+                    <li><strong>Location:</strong> Calumpit, Bulacan, Philippines</li>
+                </ul>
+        </div>
+    </div>
+</body>
+</html>
