@@ -22,14 +22,13 @@
     width: 95px;
     height: 95px;
     border-radius: 50px;
-
    }
    .menu{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: none;
     font-weight: 500;
     align-items: center;
-    justify-content: start;
+    justify-content: start; 
    }
     a
    {
@@ -199,6 +198,68 @@
     scroll-behavior: smooth;
     scroll-padding-top: 120px; 
     }
+    @media (max-width: 768px) {
+
+    #head {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu a {
+        margin: 8px;
+        font-size: 0.9rem;
+    }
+
+    #aboutme {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .image img {
+        width: 200px;
+        height: 260px;
+    }
+
+    .intro h3, .intro p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .educ-container, .skill-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .educ-card, .skill-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    #contacts {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #start img {
+        max-height: 50vh;
+    }
+    }
+
 
 </style>
 
@@ -281,14 +342,13 @@
         <div id="contacts">
                 <h2>Contact Me</h2>
                 <ul>
-                    <li><strong>Email:</strong> 
-                        <a href="mailto:sophialoraine.castillo.bsit@gmail.com">sophialoraine.castillo.bsit@gmail.com</a></li>
+                    <li><strong>Email:</strong><a href="mailto:sophialoraine.castillo.bsit@gmail.com">sophialoraine.castillo.bsit@gmail.com</a></li>
                     <li><strong>Phone:</strong> 0951 590 9066</li>
-                    <li><strong>LinkedIn:</strong> 
-                        <a href="https://www.linkedin.com/in/sophia-loraine-castillo-2a2940378" target="_blank">Sophia Loraine Castillo</a></li>
+                    <li><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/sophia-loraine-castillo-2a2940378" target="_blank">Sophia Loraine Castillo</a></li>
                     <li><strong>Address:</strong> Calumpit, Bulacan, Philippines</li>
                 </ul>
         </div>
     </div>
 </body>
 </html>
+
